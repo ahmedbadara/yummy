@@ -3,10 +3,27 @@ body {
   color: #f9f6f6 !important;
   overflow: hidden;
 }
+.side-nav-menu {
+  position: fixed;
+}
 
 .nav-tab {
-  background-color: #0d0d0d; 
+  background-color: #0d0d0d;
   display: none;
+}
+.nav-tab .links ul li {
+  cursor: pointer;
+}
+#navToggle {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .logo {
@@ -16,4 +33,18 @@ body {
 #mealData img {
   width: 100%;
   height: auto;
+}
+.btn {
+  cursor: pointer;
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
 }
